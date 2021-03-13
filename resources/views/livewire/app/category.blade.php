@@ -1,6 +1,6 @@
 @extends('layouts.conocebochil')
 
-@section('title', 'Inicio')
+@section('title', 'ConoceBochil-Inicio')
 
 
 
@@ -23,7 +23,4 @@
         @endforeach
     </div>
   </section>
-@endsection
-@section('js')
-    <script src="{{asset('pwa.js')}}"></script>
 @endsection

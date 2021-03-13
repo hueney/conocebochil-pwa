@@ -3,7 +3,7 @@ const d= document;
 let menuContent = d.querySelector('.header');
 
 let prevScrollPos = window.pageYOffset;
-console.log(prevScrollPos);
+//console.log(prevScrollPos);
 window.onscroll = () => {
 
   //Hide & Show - Scroll Menu (Function)
