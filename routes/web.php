@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [WepController::class, 'index'])->name('inicio');
 
+Route::get('/offlinee', function (){
+    return view('livewire.app.offline');
+});
 Route::get('/suppliers/{id}',  [WepController::class, 'suppliers'])->name('suppliers.index');
 
 Route::get('/products/{id}',  [WepController::class, 'products'])->name('products.index');
