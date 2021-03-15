@@ -5,10 +5,6 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
-
-
-
-
     @livewireStyles
      <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
@@ -22,8 +18,5 @@
     @yield('content')
     @livewireScripts
     <script src="{{asset('assets/js/script.js')}}"></script>
-
-
-
 </body>
 </html>
