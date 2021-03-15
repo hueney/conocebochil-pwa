@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center"><a href="https://www.conocebochil.com" target="_blank"><img src="https://scontent.ftgz1-2.fna.fbcdn.net/v/t1.0-9/159907098_103734295130414_8597755867644704153_o.png?_nc_cat=100&ccb=1-3&_nc_sid=e3f864&_nc_eui2=AeEC0gbs_nhWEJGv_CR-HkLzd_95KLURt6Z3_3kotRG3ppoXUbGOU9ZFMkwoFFKxtEBh9_28vEzDNLQqe6OkBdKj&_nc_ohc=CPiMarA_EswAX97hOhg&_nc_ht=scontent.ftgz1-2.fna&oh=e3192dfa4709327b088defe275f6582b&oe=6074B7FD" width="400"></a></p>
 
 
 
