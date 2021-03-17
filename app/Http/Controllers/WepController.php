@@ -44,12 +44,32 @@ class WepController extends Controller
     public function whatsapp($id)
     {
        $supplier = Supplier::find($id);
+
        Click::create([
             'supplier_id' => $id,
             'name' => 'click'
 
         ]);
-       $msg="quiero hacer un pedido" ;
+        if($supplier->category_id == '3'){
+
+            $saludo= '🍽️🥄🍴 Hola'.' '.$supplier->business_name.' '.'Restaurante';
+
+        }
+        if($supplier->category_id == '2'){
+
+            $saludo= '🥫🧃🍾Hola'.' '.$supplier->business_name.' '.'mi tienda de conveniencia'.'🥫🧃🍾';
+
+        }
+        if($supplier->category_id == '1'){
+
+            $saludo= '🌹💐🌷Hola'.' '.$supplier->business_name.' '.'Floreria'.'🌹💐🌷';
+
+        }
+
+
+
+       $msg=$saludo.','.' '.'me comunico desde la aplicación ConoceBochil🔍' ;
+
        $num=$supplier->telefono;
        return redirect('https://wa.me/+52'.$num.'?text='.$msg);
     }
