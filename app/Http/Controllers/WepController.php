@@ -50,7 +50,7 @@ class WepController extends Controller
             'name' => 'click'
 
         ]);
-        if($supplier->category_id == '3'){
+        if($supplier->category_id == '1'){
 
             $saludo= '🍽️🥄🍴 Hola'.' '.$supplier->business_name.' '.'Restaurante';
 
@@ -60,7 +60,7 @@ class WepController extends Controller
             $saludo= '🥫🧃🍾Hola'.' '.$supplier->business_name.' '.'mi tienda de conveniencia'.'🥫🧃🍾';
 
         }
-        if($supplier->category_id == '1'){
+        if($supplier->category_id == '3'){
 
             $saludo= '🌹💐🌷Hola'.' '.$supplier->business_name.' '.'Floreria'.'🌹💐🌷';
 
