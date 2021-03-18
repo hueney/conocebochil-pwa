@@ -14,7 +14,7 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                      @can('dashboard_index')
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        {{ __('Inicio') }}
                     </x-nav-link>
                     @endcan
                     @can('users_index')
@@ -168,7 +168,7 @@
         <div class="pt-2 pb-3 space-y-1">
             @can('dashboard_index')
             <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
+                {{ __('Inicio') }}
             </x-jet-responsive-nav-link>
             @endcan
             @can('users_index')
