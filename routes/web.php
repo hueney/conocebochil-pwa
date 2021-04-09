@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [WepController::class, 'index'])->name('inicio');
+Route::get('/acercade', function (){
+    return view('livewire.app.acerca');
+})->name('acerca.index');
 
 Route::get('/offlinee', function (){
     return view('livewire.app.offline');

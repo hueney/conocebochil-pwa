@@ -470,3 +470,8 @@ input::placeholder {
 .logo {
     grid-column: 2 / 3;
 }
+
+/*About*/
+.logoacerca {
+    width: 100px;
+}

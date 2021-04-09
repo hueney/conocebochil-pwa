@@ -1,4 +1,4 @@
-@if($supplierpro ?? '' or $supplier?? '')
+
 <header class="header">
     <section class="container">
       <nav class="menu">
@@ -10,18 +10,18 @@
           </svg>
         </a>
         @endif
-        <!--
-        <a href="#acerca"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+
+        <a href="{{ route('acerca.index') }}"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="M16 2.66669C8.648 2.66669 2.66666 8.64802 2.66666 16C2.66666 23.352 8.648 29.3334 16 29.3334C23.352 29.3334 29.3333 23.352 29.3333 16C29.3333 8.64802 23.352 2.66669 16 2.66669ZM16 26.6667C10.1187 26.6667 5.33333 21.8814 5.33333 16C5.33333 10.1187 10.1187 5.33335 16 5.33335C21.8813 5.33335 26.6667 10.1187 26.6667 16C26.6667 21.8814 21.8813 26.6667 16 26.6667Z" />
             <path d="M14.6667 14.6666H17.3333V22.6666H14.6667V14.6666ZM14.6667 9.33331H17.3333V12H14.6667V9.33331Z" />
           </svg>
-        </a>-->
+        </a>
       </nav>
     </section>
   </header>
-  @endif
+
 
   <section class="logo-header ">
     <div class="container">
