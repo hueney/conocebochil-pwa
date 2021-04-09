@@ -23,7 +23,7 @@
   </header>
   <section class="section about">
     <article class="text-center container">
-          <aside class="text-center logoacerca">
+          <aside class="text-center logoacerca ">
               <img  src="{{asset('img/logo.png')}}" alt="">
           </aside>
               <p>
