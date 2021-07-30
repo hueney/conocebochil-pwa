@@ -147,6 +147,91 @@ p {
     object-fit: cover;
 }
 
+/* ********** Contact Form ********** */
+
+.contact-form {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+}
+
+.contact-form > * {
+    padding: 0.5rem;
+    margin: 1rem auto;
+    display: block;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-size: 0.85rem;
+    font-family: var(--font);
+}
+
+.contact-form input {
+    border: 0;
+    padding-left: 0;
+    border-bottom: thin solid var(--gray-dark-color);
+}
+
+.contact-form textarea {
+    border: thin solid var(--gray-dark-color);
+    resize: none;
+}
+
+.contact-form input[type="submit"] {
+    margin-top: 0;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.contact-form input[type="submit"]:hover {
+    opacity: 0.75;
+}
+
+.contact-form *::placeholder {
+    color: var(--gray-dark-color);
+}
+
+.contact-form-response {
+    padding: 1rem;
+    width: 400px;
+    text-align: center;
+    background-color: var(--white-color);
+}
+.contact-form-response svg {
+    margin-top: 2rem;
+    width: 4rem;
+    height: 4rem;
+    fill: var(--primary-color);
+}
+
+.modal#gracias:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+@media screen and (min-width: 1024px) {
+    .contact-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+    }
+
+    .contact-form textarea,
+    .contact-form-loader {
+        grid-column: span 2;
+    }
+
+    .contact-form input[type="submit"] {
+        margin-left: 0;
+    }
+}
+
 /**Menú**/
 
 .menu {
@@ -173,6 +258,46 @@ p {
 .menu a > svg:hover {
     fill: var(--primary-alpha-color);
 }
+
+/* ********** Modal ********** */
+.modal {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-alpha-color);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.modal-close svg {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--first-color);
+}
+
+.modal[id|="trabajo"]:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*
 /***Proveedores***/
 .provider-card {
     min-height: 93px;
@@ -317,6 +442,7 @@ input::placeholder {
 
 .btn {
     border-radius: 0.5rem;
+    border: none;
     padding: 1rem;
     display: inline-block;
     width: 200px;
@@ -344,7 +470,7 @@ input::placeholder {
 }
 
 .section-title {
-    border-top: thin solid var(--primary-color);
+    /* border-top: thin solid var(--primary-color);*/
     border-bottom: thin solid var(--primary-color);
     margin: 2rem auto;
     padding: 0.5rem 1rem;
@@ -422,6 +548,24 @@ input::placeholder {
 }
 
 /*****Site Style ******/
+.contact-card {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 100%;
+    height: 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-card > svg {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--primary-color);
+}
+.contact-card > small {
+    margin-top: -1rem;
+}
 
 .header {
     position: fixed;
@@ -473,5 +617,27 @@ input::placeholder {
 
 /*About*/
 .logoacerca {
-    width: 100px;
+    width: 150px;
+}
+
+.beneficio-card {
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+.beneficio-card h3 {
+    color: var(--title-color);
+}
+.beneficio-card svg {
+    margin-bottom: 1.25rem;
+    fill: var(--primary-color);
+}
+
+.social-media a {
+    padding: 0 0.4rem;
+    text-decoration: none;
+}
+.social-media svg {
+    width: 1.5rem;
+    height: 1.5rem;
 }
